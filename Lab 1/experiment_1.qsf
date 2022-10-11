@@ -33,3 +33,6 @@ set_global_assignment -name EDA_DESIGN_ENTRY_SYNTHESIS_TOOL Custom
 set_global_assignment -name EDA_INPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_design_synthesis
 set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
 set_global_assignment -name VERILOG_FILE experiment_1.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE experiment_1.vwf
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE experiment_1.vwf
