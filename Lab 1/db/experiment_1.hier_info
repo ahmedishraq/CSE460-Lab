@@ -1,0 +1,9 @@
+|experiment_1
+a => y~0.IN0
+a => x~0.IN0
+b => y~0.IN1
+b => x~0.IN1
+x <= x~0.DB_MAX_OUTPUT_PORT_TYPE
+y <= y~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
