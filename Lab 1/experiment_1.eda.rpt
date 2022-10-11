@@ -1,5 +1,5 @@
 EDA Netlist Writer report for experiment_1
-Tue Oct 11 15:47:17 2022
+Tue Oct 11 15:49:09 2022
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -34,7 +34,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                                       ;
 +---------------------------+------------------------------------------------------+
-; EDA Netlist Writer Status ; No Output Files Generated - Tue Oct 11 15:47:17 2022 ;
+; EDA Netlist Writer Status ; No Output Files Generated - Tue Oct 11 15:49:09 2022 ;
 ; Revision Name             ; experiment_1                                         ;
 ; Top-level Entity Name     ; experiment_1                                         ;
 ; Family                    ; FLEX10KE                                             ;
@@ -47,12 +47,12 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II EDA Netlist Writer
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Tue Oct 11 15:47:17 2022
+    Info: Processing started: Tue Oct 11 15:49:09 2022
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off experiment_1 -c experiment_1
 Warning: Can't generate output files. Specify command-line options to generate output files, or update EDA tool settings using GUI or Tcl script.
 Info: Quartus II EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 155 megabytes
-    Info: Processing ended: Tue Oct 11 15:47:17 2022
+    Info: Peak virtual memory: 156 megabytes
+    Info: Processing ended: Tue Oct 11 15:49:09 2022
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 

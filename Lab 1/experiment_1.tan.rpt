@@ -1,5 +1,5 @@
 Classic Timing Analyzer report for experiment_1
-Tue Oct 11 15:47:17 2022
+Tue Oct 11 15:49:08 2022
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -91,7 +91,7 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Classic Timing Analyzer
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Tue Oct 11 15:47:17 2022
+    Info: Processing started: Tue Oct 11 15:49:08 2022
 Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off experiment_1 -c experiment_1
 Info: Started post-fitting delay annotation
 Info: Delay annotation completed successfully
@@ -103,7 +103,7 @@ Info: Longest tpd from source pin "a" to destination pin "y" is 6.900 ns
     Info: Total interconnect delay = 0.800 ns ( 11.59 % )
 Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 178 megabytes
-    Info: Processing ended: Tue Oct 11 15:47:17 2022
+    Info: Processing ended: Tue Oct 11 15:49:08 2022
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
