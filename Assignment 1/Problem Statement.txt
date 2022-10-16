@@ -1,0 +1,1 @@
+Problem Statement:  Write a Verilog code to implement the AOI-32 gate and verify it with the timing diagram in Quartus.
