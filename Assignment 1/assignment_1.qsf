@@ -27,9 +27,12 @@ set_global_assignment -name FAMILY FLEX10KE
 set_global_assignment -name DEVICE AUTO
 set_global_assignment -name TOP_LEVEL_ENTITY assignment_1
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 8.1
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "21:01:42  OCTOBER 17, 2022"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "21:41:05  OCTOBER 17, 2022"
 set_global_assignment -name LAST_QUARTUS_VERSION 8.1
 set_global_assignment -name EDA_DESIGN_ENTRY_SYNTHESIS_TOOL Custom
 set_global_assignment -name EDA_INPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_design_synthesis
 set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
 set_global_assignment -name VERILOG_FILE assignment_1.v
+set_global_assignment -name VECTOR_WAVEFORM_FILE assignment_1.vwf
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE assignment_1.vwf

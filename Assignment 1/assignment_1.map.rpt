@@ -1,5 +1,5 @@
 Analysis & Synthesis report for assignment_1
-Mon Oct 17 21:09:30 2022
+Mon Oct 17 21:42:10 2022
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -39,12 +39,12 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                          ;
 +-----------------------------+-----------------------------------------+
-; Analysis & Synthesis Status ; Successful - Mon Oct 17 21:09:30 2022   ;
+; Analysis & Synthesis Status ; Successful - Mon Oct 17 21:42:10 2022   ;
 ; Quartus II Version          ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name               ; assignment_1                            ;
 ; Top-level Entity Name       ; assignment_1                            ;
 ; Family                      ; FLEX10KE                                ;
-; Total logic elements        ; 1                                       ;
+; Total logic elements        ; 2                                       ;
 ; Total pins                  ; 6                                       ;
 ; Total memory bits           ; 0                                       ;
 ; Total PLLs                  ; 0                                       ;
@@ -126,19 +126,19 @@ applicable agreement for further details.
 +--------------------------------+------------+
 ; Resource                       ; Usage      ;
 +--------------------------------+------------+
-; Total logic elements           ; 1          ;
-; Total combinational functions  ; 1          ;
-;     -- Total 4-input functions ; 1          ;
-;     -- Total 3-input functions ; 0          ;
+; Total logic elements           ; 2          ;
+; Total combinational functions  ; 2          ;
+;     -- Total 4-input functions ; 0          ;
+;     -- Total 3-input functions ; 2          ;
 ;     -- Total 2-input functions ; 0          ;
 ;     -- Total 1-input functions ; 0          ;
 ;     -- Total 0-input functions ; 0          ;
 ; Total registers                ; 0          ;
 ; I/O pins                       ; 6          ;
-; Maximum fan-out node           ; r~13       ;
+; Maximum fan-out node           ; h~14       ;
 ; Maximum fan-out                ; 1          ;
-; Total fan-out                  ; 5          ;
-; Average fan-out                ; 0.71       ;
+; Total fan-out                  ; 7          ;
+; Average fan-out                ; 0.88       ;
 +--------------------------------+------------+
 
 
@@ -147,7 +147,7 @@ applicable agreement for further details.
 +----------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; Memory Bits ; Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
-; |assignment_1              ; 1 (1)       ; 0            ; 0           ; 6    ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |assignment_1       ; work         ;
+; |assignment_1              ; 2 (2)       ; 0            ; 0           ; 6    ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |assignment_1       ; work         ;
 +----------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -173,7 +173,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Mon Oct 17 21:09:30 2022
+    Info: Processing started: Mon Oct 17 21:42:10 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off assignment_1 -c assignment_1
 Info: Found 1 design units, including 1 entities, in source file assignment_1.v
     Info: Found entity 1: assignment_1
@@ -184,15 +184,13 @@ Warning: EDA synthesis tool is specified as "Custom", but Library Mapping File i
 Warning: EDA synthesis tool is specified as "Custom", but VCC is not specified
 Warning: EDA synthesis tool is specified as "Custom", but GND is not specified
 Info: Elaborating entity "assignment_1" for the top level hierarchy
-Warning: Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "d"
-Info: Implemented 7 device resources after synthesis - the final resource count might be different
+Info: Implemented 8 device resources after synthesis - the final resource count might be different
     Info: Implemented 5 input pins
     Info: Implemented 1 output pins
-    Info: Implemented 1 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 219 megabytes
-    Info: Processing ended: Mon Oct 17 21:09:30 2022
+    Info: Implemented 2 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 218 megabytes
+    Info: Processing ended: Mon Oct 17 21:42:10 2022
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 

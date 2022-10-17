@@ -3,7 +3,8 @@ module assignment_1(a,b,c,d,e,y);
 	output y;
 	
 	assign h = a&b&c;
-	assign k = b&e;
+	assign k = d&e;
 	assign r = h|k;
 	assign y = ~r;
+
 endmodule 

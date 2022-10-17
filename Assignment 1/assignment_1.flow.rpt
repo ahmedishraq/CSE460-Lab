@@ -1,5 +1,5 @@
 Flow report for assignment_1
-Mon Oct 17 21:09:35 2022
+Mon Oct 17 21:42:14 2022
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -38,13 +38,13 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; Flow Summary                                                      ;
 +-------------------------+-----------------------------------------+
-; Flow Status             ; Successful - Mon Oct 17 21:09:35 2022   ;
+; Flow Status             ; Successful - Mon Oct 17 21:42:14 2022   ;
 ; Quartus II Version      ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name           ; assignment_1                            ;
 ; Top-level Entity Name   ; assignment_1                            ;
 ; Family                  ; FLEX10KE                                ;
 ; Met timing requirements ; Yes                                     ;
-; Total logic elements    ; 1 / 1,728 ( < 1 % )                     ;
+; Total logic elements    ; 2 / 1,728 ( < 1 % )                     ;
 ; Total pins              ; 6 / 102 ( 6 % )                         ;
 ; Total memory bits       ; 0 / 24,576 ( 0 % )                      ;
 ; Total PLLs              ; 0                                       ;
@@ -58,7 +58,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/17/2022 21:09:30 ;
+; Start date & time ; 10/17/2022 21:42:10 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; assignment_1        ;
 +-------------------+---------------------+
@@ -69,7 +69,7 @@ applicable agreement for further details.
 +------------------------------------+---------------------------------+---------------+-------------+----------------------+
 ; Assignment Name                    ; Value                           ; Default Value ; Entity Name ; Section Id           ;
 +------------------------------------+---------------------------------+---------------+-------------+----------------------+
-; COMPILER_SIGNATURE_ID              ; 237901788548311.166601937007952 ; --            ; --          ; --                   ;
+; COMPILER_SIGNATURE_ID              ; 237901788548311.166602133009536 ; --            ; --          ; --                   ;
 ; EDA_DESIGN_ENTRY_SYNTHESIS_TOOL    ; Custom                          ; <None>        ; --          ; --                   ;
 ; EDA_INPUT_DATA_FORMAT              ; Verilog Hdl                     ; --            ; --          ; eda_design_synthesis ;
 ; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                             ; --            ; --          ; eda_blast_fpga       ;
@@ -81,11 +81,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:00     ; 1.0                     ; 219 MB              ; 00:00:00                           ;
-; Fitter                  ; 00:00:01     ; 1.0                     ; 224 MB              ; 00:00:00                           ;
-; Assembler               ; 00:00:00     ; 1.0                     ; 210 MB              ; 00:00:00                           ;
-; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 179 MB              ; 00:00:00                           ;
-; Total                   ; 00:00:01     ; --                      ; --                  ; 00:00:00                           ;
+; Analysis & Synthesis    ; 00:00:00     ; 1.0                     ; 218 MB              ; 00:00:00                           ;
+; Fitter                  ; 00:00:00     ; 1.0                     ; 223 MB              ; 00:00:00                           ;
+; Assembler               ; 00:00:00     ; 1.0                     ; 208 MB              ; 00:00:00                           ;
+; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 178 MB              ; 00:00:00                           ;
+; Total                   ; 00:00:00     ; --                      ; --                  ; 00:00:00                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
