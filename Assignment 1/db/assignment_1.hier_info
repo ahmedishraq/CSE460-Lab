@@ -1,0 +1,10 @@
+|assignment_1
+a => h~0.IN0
+b => k.IN0
+b => h~0.IN1
+c => h.IN1
+d => ~NO_FANOUT~
+e => k.IN1
+y <= r.DB_MAX_OUTPUT_PORT_TYPE
+
+
