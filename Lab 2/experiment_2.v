@@ -6,9 +6,9 @@ module experiment_2(w,y);
 	begin
 		casex (w)
 			4'bxx1x: y=1;
-			4'b1xxx: y=3;
-			4'bxxx1: y=0;
-			4'bx1xx: y=2;
+			4'b1x0x: y=3;
+			4'b0x01: y=0;
+			4'b0100: y=2;
 			default : y= 2'bxx;
 		endcase
 	end

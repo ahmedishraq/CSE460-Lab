@@ -1,5 +1,5 @@
 Flow report for experiment_2
-Tue Oct 18 16:27:10 2022
+Tue Oct 18 16:36:41 2022
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; Flow Summary                                                      ;
 +-------------------------+-----------------------------------------+
-; Flow Status             ; Successful - Tue Oct 18 16:27:10 2022   ;
+; Flow Status             ; Successful - Tue Oct 18 16:36:41 2022   ;
 ; Quartus II Version      ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name           ; experiment_2                            ;
 ; Top-level Entity Name   ; experiment_2                            ;
@@ -58,7 +58,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/18/2022 16:27:06 ;
+; Start date & time ; 10/18/2022 16:36:38 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; experiment_2        ;
 +-------------------+---------------------+
@@ -69,7 +69,7 @@ applicable agreement for further details.
 +------------------------------------+--------------------------------+---------------+-------------+----------------------+
 ; Assignment Name                    ; Value                          ; Default Value ; Entity Name ; Section Id           ;
 +------------------------------------+--------------------------------+---------------+-------------+----------------------+
-; COMPILER_SIGNATURE_ID              ; 31239360594473.166608882601076 ; --            ; --          ; --                   ;
+; COMPILER_SIGNATURE_ID              ; 31239360594473.166608939807940 ; --            ; --          ; --                   ;
 ; EDA_DESIGN_ENTRY_SYNTHESIS_TOOL    ; Custom                         ; <None>        ; --          ; --                   ;
 ; EDA_INPUT_DATA_FORMAT              ; Verilog Hdl                    ; --            ; --          ; eda_design_synthesis ;
 ; EDA_NETLIST_WRITER_OUTPUT_DIR      ; timing/custom                  ; --            ; --          ; eda_timing_analysis  ;
@@ -87,12 +87,12 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:00     ; 1.0                     ; 215 MB              ; 00:00:00                           ;
-; Fitter                  ; 00:00:01     ; 1.0                     ; 203 MB              ; 00:00:00                           ;
+; Analysis & Synthesis    ; 00:00:00     ; 1.0                     ; 214 MB              ; 00:00:00                           ;
+; Fitter                  ; 00:00:00     ; 1.0                     ; 203 MB              ; 00:00:00                           ;
 ; Assembler               ; 00:00:00     ; 1.0                     ; 197 MB              ; 00:00:00                           ;
 ; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 166 MB              ; 00:00:00                           ;
 ; EDA Netlist Writer      ; 00:00:00     ; 1.0                     ; 151 MB              ; 00:00:00                           ;
-; Total                   ; 00:00:01     ; --                      ; --                  ; 00:00:00                           ;
+; Total                   ; 00:00:00     ; --                      ; --                  ; 00:00:00                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
