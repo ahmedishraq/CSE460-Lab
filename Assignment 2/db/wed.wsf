@@ -155,9 +155,9 @@ VECTOR("F:/Study/VLSI/CSE460-Lab/Assignment 2/db/assignment_2.sim.cvwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 29716;
-		NUMERATOR = 1329;
-		DENOMINATOR = 29716;
+		ZEND = 62336;
+		NUMERATOR = 1394;
+		DENOMINATOR = 62336;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
