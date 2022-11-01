@@ -1,0 +1,32 @@
+|task_2
+clk => next_state[1]~reg0.CLK
+clk => next_state[0]~reg0.CLK
+clk => current_state[1]~reg0.CLK
+clk => current_state[0]~reg0.CLK
+clk => purchase~reg0.CLK
+clk => cash_return[1]~reg0.CLK
+clk => cash_return[0]~reg0.CLK
+reset => next_state[1]~reg0.ACLR
+reset => next_state[0]~reg0.ACLR
+reset => current_state[1]~reg0.ACLR
+reset => current_state[0]~reg0.ACLR
+reset => purchase~reg0.ACLR
+reset => cash_return[1]~reg0.ACLR
+reset => cash_return[0]~reg0.ACLR
+cash_in[1] => Equal0.IN0
+cash_in[1] => Equal1.IN0
+cash_in[1] => Equal2.IN1
+cash_in[1] => Equal3.IN0
+cash_in[0] => Equal0.IN1
+cash_in[0] => Equal1.IN1
+cash_in[0] => Equal2.IN0
+cash_in[0] => Equal3.IN1
+cash_return[0] <= cash_return[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cash_return[1] <= cash_return[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+purchase <= purchase~reg0.DB_MAX_OUTPUT_PORT_TYPE
+next_state[0] <= next_state[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+next_state[1] <= next_state[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+current_state[0] <= current_state[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+current_state[1] <= current_state[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

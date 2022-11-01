@@ -1,0 +1,366 @@
+Simulator report for task_2
+Tue Nov 01 16:44:53 2022
+Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2008 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 129 nodes    ;
+; Simulation Coverage         ;      32.56 % ;
+; Total Number of Transitions ; 302          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; FLEX10KE     ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Vector input source                                                                        ; task_2.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      32.56 % ;
+; Total nodes checked                                 ; 129          ;
+; Total output ports checked                          ; 129          ;
+; Total output ports with complete 1/0-value coverage ; 42           ;
+; Total output ports with no 1/0-value coverage       ; 76           ;
+; Total output ports with no 1-value coverage         ; 87           ;
+; Total output ports with no 0-value coverage         ; 76           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                            ;
++--------------------------------------------------+--------------------------------------------------+------------------+
+; Node Name                                        ; Output Port Name                                 ; Output Port Type ;
++--------------------------------------------------+--------------------------------------------------+------------------+
+; |task_2|purchase~0                               ; |task_2|purchase~0                               ; out              ;
+; |task_2|cash_return~2                            ; |task_2|cash_return~2                            ; out              ;
+; |task_2|purchase~1                               ; |task_2|purchase~1                               ; out              ;
+; |task_2|cash_return~4                            ; |task_2|cash_return~4                            ; out              ;
+; |task_2|purchase~2                               ; |task_2|purchase~2                               ; out              ;
+; |task_2|cash_return~6                            ; |task_2|cash_return~6                            ; out              ;
+; |task_2|cash_return~7                            ; |task_2|cash_return~7                            ; out              ;
+; |task_2|cash_return~8                            ; |task_2|cash_return~8                            ; out              ;
+; |task_2|purchase~3                               ; |task_2|purchase~3                               ; out              ;
+; |task_2|cash_return~9                            ; |task_2|cash_return~9                            ; out              ;
+; |task_2|purchase~4                               ; |task_2|purchase~4                               ; out              ;
+; |task_2|cash_return~10                           ; |task_2|cash_return~10                           ; out              ;
+; |task_2|cash_return~11                           ; |task_2|cash_return~11                           ; out              ;
+; |task_2|cash_return[0]~reg0                      ; |task_2|cash_return[0]~reg0                      ; regout           ;
+; |task_2|purchase~5                               ; |task_2|purchase~5                               ; out              ;
+; |task_2|cash_return~12                           ; |task_2|cash_return~12                           ; out              ;
+; |task_2|cash_return~13                           ; |task_2|cash_return~13                           ; out              ;
+; |task_2|purchase~6                               ; |task_2|purchase~6                               ; out              ;
+; |task_2|cash_return~14                           ; |task_2|cash_return~14                           ; out              ;
+; |task_2|cash_return~15                           ; |task_2|cash_return~15                           ; out              ;
+; |task_2|purchase~7                               ; |task_2|purchase~7                               ; out              ;
+; |task_2|cash_return~16                           ; |task_2|cash_return~16                           ; out              ;
+; |task_2|cash_return~17                           ; |task_2|cash_return~17                           ; out              ;
+; |task_2|purchase~8                               ; |task_2|purchase~8                               ; out              ;
+; |task_2|cash_return~18                           ; |task_2|cash_return~18                           ; out              ;
+; |task_2|cash_return~19                           ; |task_2|cash_return~19                           ; out              ;
+; |task_2|purchase~reg0                            ; |task_2|purchase~reg0                            ; regout           ;
+; |task_2|clk                                      ; |task_2|clk                                      ; out              ;
+; |task_2|cash_in[1]                               ; |task_2|cash_in[1]                               ; out              ;
+; |task_2|cash_in[0]                               ; |task_2|cash_in[0]                               ; out              ;
+; |task_2|cash_return[0]                           ; |task_2|cash_return[0]                           ; pin_out          ;
+; |task_2|purchase                                 ; |task_2|purchase                                 ; pin_out          ;
+; |task_2|Equal0~3                                 ; |task_2|Equal0~3                                 ; out0             ;
+; |task_2|Equal3~3                                 ; |task_2|Equal3~3                                 ; out0             ;
+; |task_2|lpm_mux:Mux4|muxlut:$00009|_~4           ; |task_2|lpm_mux:Mux4|muxlut:$00009|_~4           ; out0             ;
+; |task_2|lpm_mux:Mux4|muxlut:$00009|_~8           ; |task_2|lpm_mux:Mux4|muxlut:$00009|_~8           ; out0             ;
+; |task_2|lpm_mux:Mux4|muxlut:$00009|result_node~1 ; |task_2|lpm_mux:Mux4|muxlut:$00009|result_node~1 ; out0             ;
+; |task_2|lpm_mux:Mux4|muxlut:$00009|result_node   ; |task_2|lpm_mux:Mux4|muxlut:$00009|result_node   ; out0             ;
+; |task_2|lpm_mux:Mux2|muxlut:$00009|_~4           ; |task_2|lpm_mux:Mux2|muxlut:$00009|_~4           ; out0             ;
+; |task_2|lpm_mux:Mux2|muxlut:$00009|_~8           ; |task_2|lpm_mux:Mux2|muxlut:$00009|_~8           ; out0             ;
+; |task_2|lpm_mux:Mux2|muxlut:$00009|result_node~1 ; |task_2|lpm_mux:Mux2|muxlut:$00009|result_node~1 ; out0             ;
+; |task_2|lpm_mux:Mux2|muxlut:$00009|result_node   ; |task_2|lpm_mux:Mux2|muxlut:$00009|result_node   ; out0             ;
++--------------------------------------------------+--------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                               ;
++--------------------------------------------------+--------------------------------------------------+------------------+
+; Node Name                                        ; Output Port Name                                 ; Output Port Type ;
++--------------------------------------------------+--------------------------------------------------+------------------+
+; |task_2|cash_return~0                            ; |task_2|cash_return~0                            ; out              ;
+; |task_2|next_state~0                             ; |task_2|next_state~0                             ; out              ;
+; |task_2|next_state~1                             ; |task_2|next_state~1                             ; out              ;
+; |task_2|cash_return~1                            ; |task_2|cash_return~1                            ; out              ;
+; |task_2|next_state~2                             ; |task_2|next_state~2                             ; out              ;
+; |task_2|next_state~3                             ; |task_2|next_state~3                             ; out              ;
+; |task_2|cash_return~3                            ; |task_2|cash_return~3                            ; out              ;
+; |task_2|next_state~4                             ; |task_2|next_state~4                             ; out              ;
+; |task_2|next_state~5                             ; |task_2|next_state~5                             ; out              ;
+; |task_2|cash_return~5                            ; |task_2|cash_return~5                            ; out              ;
+; |task_2|next_state~6                             ; |task_2|next_state~6                             ; out              ;
+; |task_2|next_state~7                             ; |task_2|next_state~7                             ; out              ;
+; |task_2|next_state~8                             ; |task_2|next_state~8                             ; out              ;
+; |task_2|next_state~9                             ; |task_2|next_state~9                             ; out              ;
+; |task_2|next_state~10                            ; |task_2|next_state~10                            ; out              ;
+; |task_2|next_state~11                            ; |task_2|next_state~11                            ; out              ;
+; |task_2|next_state~12                            ; |task_2|next_state~12                            ; out              ;
+; |task_2|next_state~13                            ; |task_2|next_state~13                            ; out              ;
+; |task_2|next_state~14                            ; |task_2|next_state~14                            ; out              ;
+; |task_2|next_state~15                            ; |task_2|next_state~15                            ; out              ;
+; |task_2|next_state~16                            ; |task_2|next_state~16                            ; out              ;
+; |task_2|next_state~17                            ; |task_2|next_state~17                            ; out              ;
+; |task_2|next_state[1]~reg0                       ; |task_2|next_state[1]~reg0                       ; regout           ;
+; |task_2|next_state[0]~reg0                       ; |task_2|next_state[0]~reg0                       ; regout           ;
+; |task_2|current_state[1]~reg0                    ; |task_2|current_state[1]~reg0                    ; regout           ;
+; |task_2|current_state[0]~reg0                    ; |task_2|current_state[0]~reg0                    ; regout           ;
+; |task_2|cash_return[1]~reg0                      ; |task_2|cash_return[1]~reg0                      ; regout           ;
+; |task_2|reset                                    ; |task_2|reset                                    ; out              ;
+; |task_2|cash_return[1]                           ; |task_2|cash_return[1]                           ; pin_out          ;
+; |task_2|next_state[0]                            ; |task_2|next_state[0]                            ; pin_out          ;
+; |task_2|next_state[1]                            ; |task_2|next_state[1]                            ; pin_out          ;
+; |task_2|current_state[0]                         ; |task_2|current_state[0]                         ; pin_out          ;
+; |task_2|current_state[1]                         ; |task_2|current_state[1]                         ; pin_out          ;
+; |task_2|Equal1~3                                 ; |task_2|Equal1~3                                 ; out0             ;
+; |task_2|Equal2~3                                 ; |task_2|Equal2~3                                 ; out0             ;
+; |task_2|lpm_mux:Mux4|muxlut:$00009|_~0           ; |task_2|lpm_mux:Mux4|muxlut:$00009|_~0           ; out0             ;
+; |task_2|lpm_mux:Mux4|muxlut:$00009|_~1           ; |task_2|lpm_mux:Mux4|muxlut:$00009|_~1           ; out0             ;
+; |task_2|lpm_mux:Mux4|muxlut:$00009|_~2           ; |task_2|lpm_mux:Mux4|muxlut:$00009|_~2           ; out0             ;
+; |task_2|lpm_mux:Mux4|muxlut:$00009|_~3           ; |task_2|lpm_mux:Mux4|muxlut:$00009|_~3           ; out0             ;
+; |task_2|lpm_mux:Mux4|muxlut:$00009|result_node~0 ; |task_2|lpm_mux:Mux4|muxlut:$00009|result_node~0 ; out0             ;
+; |task_2|lpm_mux:Mux4|muxlut:$00009|_~5           ; |task_2|lpm_mux:Mux4|muxlut:$00009|_~5           ; out0             ;
+; |task_2|lpm_mux:Mux4|muxlut:$00009|_~6           ; |task_2|lpm_mux:Mux4|muxlut:$00009|_~6           ; out0             ;
+; |task_2|lpm_mux:Mux4|muxlut:$00009|_~7           ; |task_2|lpm_mux:Mux4|muxlut:$00009|_~7           ; out0             ;
+; |task_2|lpm_mux:Mux3|muxlut:$00009|_~0           ; |task_2|lpm_mux:Mux3|muxlut:$00009|_~0           ; out0             ;
+; |task_2|lpm_mux:Mux3|muxlut:$00009|_~1           ; |task_2|lpm_mux:Mux3|muxlut:$00009|_~1           ; out0             ;
+; |task_2|lpm_mux:Mux3|muxlut:$00009|_~2           ; |task_2|lpm_mux:Mux3|muxlut:$00009|_~2           ; out0             ;
+; |task_2|lpm_mux:Mux3|muxlut:$00009|_~3           ; |task_2|lpm_mux:Mux3|muxlut:$00009|_~3           ; out0             ;
+; |task_2|lpm_mux:Mux3|muxlut:$00009|_~4           ; |task_2|lpm_mux:Mux3|muxlut:$00009|_~4           ; out0             ;
+; |task_2|lpm_mux:Mux3|muxlut:$00009|result_node~0 ; |task_2|lpm_mux:Mux3|muxlut:$00009|result_node~0 ; out0             ;
+; |task_2|lpm_mux:Mux3|muxlut:$00009|_~5           ; |task_2|lpm_mux:Mux3|muxlut:$00009|_~5           ; out0             ;
+; |task_2|lpm_mux:Mux3|muxlut:$00009|_~6           ; |task_2|lpm_mux:Mux3|muxlut:$00009|_~6           ; out0             ;
+; |task_2|lpm_mux:Mux3|muxlut:$00009|_~7           ; |task_2|lpm_mux:Mux3|muxlut:$00009|_~7           ; out0             ;
+; |task_2|lpm_mux:Mux3|muxlut:$00009|_~8           ; |task_2|lpm_mux:Mux3|muxlut:$00009|_~8           ; out0             ;
+; |task_2|lpm_mux:Mux3|muxlut:$00009|result_node~1 ; |task_2|lpm_mux:Mux3|muxlut:$00009|result_node~1 ; out0             ;
+; |task_2|lpm_mux:Mux3|muxlut:$00009|result_node   ; |task_2|lpm_mux:Mux3|muxlut:$00009|result_node   ; out0             ;
+; |task_2|lpm_mux:Mux2|muxlut:$00009|_~0           ; |task_2|lpm_mux:Mux2|muxlut:$00009|_~0           ; out0             ;
+; |task_2|lpm_mux:Mux2|muxlut:$00009|_~1           ; |task_2|lpm_mux:Mux2|muxlut:$00009|_~1           ; out0             ;
+; |task_2|lpm_mux:Mux2|muxlut:$00009|_~2           ; |task_2|lpm_mux:Mux2|muxlut:$00009|_~2           ; out0             ;
+; |task_2|lpm_mux:Mux2|muxlut:$00009|_~3           ; |task_2|lpm_mux:Mux2|muxlut:$00009|_~3           ; out0             ;
+; |task_2|lpm_mux:Mux2|muxlut:$00009|result_node~0 ; |task_2|lpm_mux:Mux2|muxlut:$00009|result_node~0 ; out0             ;
+; |task_2|lpm_mux:Mux2|muxlut:$00009|_~5           ; |task_2|lpm_mux:Mux2|muxlut:$00009|_~5           ; out0             ;
+; |task_2|lpm_mux:Mux2|muxlut:$00009|_~6           ; |task_2|lpm_mux:Mux2|muxlut:$00009|_~6           ; out0             ;
+; |task_2|lpm_mux:Mux2|muxlut:$00009|_~7           ; |task_2|lpm_mux:Mux2|muxlut:$00009|_~7           ; out0             ;
+; |task_2|lpm_mux:Mux1|muxlut:$00009|_~0           ; |task_2|lpm_mux:Mux1|muxlut:$00009|_~0           ; out0             ;
+; |task_2|lpm_mux:Mux1|muxlut:$00009|_~1           ; |task_2|lpm_mux:Mux1|muxlut:$00009|_~1           ; out0             ;
+; |task_2|lpm_mux:Mux1|muxlut:$00009|_~2           ; |task_2|lpm_mux:Mux1|muxlut:$00009|_~2           ; out0             ;
+; |task_2|lpm_mux:Mux1|muxlut:$00009|_~3           ; |task_2|lpm_mux:Mux1|muxlut:$00009|_~3           ; out0             ;
+; |task_2|lpm_mux:Mux1|muxlut:$00009|_~4           ; |task_2|lpm_mux:Mux1|muxlut:$00009|_~4           ; out0             ;
+; |task_2|lpm_mux:Mux1|muxlut:$00009|result_node~0 ; |task_2|lpm_mux:Mux1|muxlut:$00009|result_node~0 ; out0             ;
+; |task_2|lpm_mux:Mux1|muxlut:$00009|_~5           ; |task_2|lpm_mux:Mux1|muxlut:$00009|_~5           ; out0             ;
+; |task_2|lpm_mux:Mux1|muxlut:$00009|_~6           ; |task_2|lpm_mux:Mux1|muxlut:$00009|_~6           ; out0             ;
+; |task_2|lpm_mux:Mux1|muxlut:$00009|_~7           ; |task_2|lpm_mux:Mux1|muxlut:$00009|_~7           ; out0             ;
+; |task_2|lpm_mux:Mux1|muxlut:$00009|_~8           ; |task_2|lpm_mux:Mux1|muxlut:$00009|_~8           ; out0             ;
+; |task_2|lpm_mux:Mux1|muxlut:$00009|result_node~1 ; |task_2|lpm_mux:Mux1|muxlut:$00009|result_node~1 ; out0             ;
+; |task_2|lpm_mux:Mux1|muxlut:$00009|result_node   ; |task_2|lpm_mux:Mux1|muxlut:$00009|result_node   ; out0             ;
+; |task_2|lpm_mux:Mux0|muxlut:$00009|_~0           ; |task_2|lpm_mux:Mux0|muxlut:$00009|_~0           ; out0             ;
+; |task_2|lpm_mux:Mux0|muxlut:$00009|_~1           ; |task_2|lpm_mux:Mux0|muxlut:$00009|_~1           ; out0             ;
+; |task_2|lpm_mux:Mux0|muxlut:$00009|_~2           ; |task_2|lpm_mux:Mux0|muxlut:$00009|_~2           ; out0             ;
+; |task_2|lpm_mux:Mux0|muxlut:$00009|_~3           ; |task_2|lpm_mux:Mux0|muxlut:$00009|_~3           ; out0             ;
+; |task_2|lpm_mux:Mux0|muxlut:$00009|_~4           ; |task_2|lpm_mux:Mux0|muxlut:$00009|_~4           ; out0             ;
+; |task_2|lpm_mux:Mux0|muxlut:$00009|result_node~0 ; |task_2|lpm_mux:Mux0|muxlut:$00009|result_node~0 ; out0             ;
+; |task_2|lpm_mux:Mux0|muxlut:$00009|_~5           ; |task_2|lpm_mux:Mux0|muxlut:$00009|_~5           ; out0             ;
+; |task_2|lpm_mux:Mux0|muxlut:$00009|_~6           ; |task_2|lpm_mux:Mux0|muxlut:$00009|_~6           ; out0             ;
+; |task_2|lpm_mux:Mux0|muxlut:$00009|_~7           ; |task_2|lpm_mux:Mux0|muxlut:$00009|_~7           ; out0             ;
+; |task_2|lpm_mux:Mux0|muxlut:$00009|_~8           ; |task_2|lpm_mux:Mux0|muxlut:$00009|_~8           ; out0             ;
+; |task_2|lpm_mux:Mux0|muxlut:$00009|result_node~1 ; |task_2|lpm_mux:Mux0|muxlut:$00009|result_node~1 ; out0             ;
+; |task_2|lpm_mux:Mux0|muxlut:$00009|result_node   ; |task_2|lpm_mux:Mux0|muxlut:$00009|result_node   ; out0             ;
++--------------------------------------------------+--------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                               ;
++--------------------------------------------------+--------------------------------------------------+------------------+
+; Node Name                                        ; Output Port Name                                 ; Output Port Type ;
++--------------------------------------------------+--------------------------------------------------+------------------+
+; |task_2|cash_return~0                            ; |task_2|cash_return~0                            ; out              ;
+; |task_2|next_state~0                             ; |task_2|next_state~0                             ; out              ;
+; |task_2|next_state~1                             ; |task_2|next_state~1                             ; out              ;
+; |task_2|cash_return~1                            ; |task_2|cash_return~1                            ; out              ;
+; |task_2|next_state~2                             ; |task_2|next_state~2                             ; out              ;
+; |task_2|cash_return~3                            ; |task_2|cash_return~3                            ; out              ;
+; |task_2|next_state~4                             ; |task_2|next_state~4                             ; out              ;
+; |task_2|cash_return~5                            ; |task_2|cash_return~5                            ; out              ;
+; |task_2|next_state~10                            ; |task_2|next_state~10                            ; out              ;
+; |task_2|next_state~11                            ; |task_2|next_state~11                            ; out              ;
+; |task_2|next_state~12                            ; |task_2|next_state~12                            ; out              ;
+; |task_2|next_state~13                            ; |task_2|next_state~13                            ; out              ;
+; |task_2|next_state~14                            ; |task_2|next_state~14                            ; out              ;
+; |task_2|next_state~15                            ; |task_2|next_state~15                            ; out              ;
+; |task_2|next_state~16                            ; |task_2|next_state~16                            ; out              ;
+; |task_2|next_state~17                            ; |task_2|next_state~17                            ; out              ;
+; |task_2|next_state[1]~reg0                       ; |task_2|next_state[1]~reg0                       ; regout           ;
+; |task_2|next_state[0]~reg0                       ; |task_2|next_state[0]~reg0                       ; regout           ;
+; |task_2|current_state[1]~reg0                    ; |task_2|current_state[1]~reg0                    ; regout           ;
+; |task_2|current_state[0]~reg0                    ; |task_2|current_state[0]~reg0                    ; regout           ;
+; |task_2|cash_return[1]~reg0                      ; |task_2|cash_return[1]~reg0                      ; regout           ;
+; |task_2|cash_return[1]                           ; |task_2|cash_return[1]                           ; pin_out          ;
+; |task_2|next_state[0]                            ; |task_2|next_state[0]                            ; pin_out          ;
+; |task_2|next_state[1]                            ; |task_2|next_state[1]                            ; pin_out          ;
+; |task_2|current_state[0]                         ; |task_2|current_state[0]                         ; pin_out          ;
+; |task_2|current_state[1]                         ; |task_2|current_state[1]                         ; pin_out          ;
+; |task_2|Equal2~3                                 ; |task_2|Equal2~3                                 ; out0             ;
+; |task_2|lpm_mux:Mux4|muxlut:$00009|_~0           ; |task_2|lpm_mux:Mux4|muxlut:$00009|_~0           ; out0             ;
+; |task_2|lpm_mux:Mux4|muxlut:$00009|_~1           ; |task_2|lpm_mux:Mux4|muxlut:$00009|_~1           ; out0             ;
+; |task_2|lpm_mux:Mux4|muxlut:$00009|_~2           ; |task_2|lpm_mux:Mux4|muxlut:$00009|_~2           ; out0             ;
+; |task_2|lpm_mux:Mux4|muxlut:$00009|_~3           ; |task_2|lpm_mux:Mux4|muxlut:$00009|_~3           ; out0             ;
+; |task_2|lpm_mux:Mux4|muxlut:$00009|result_node~0 ; |task_2|lpm_mux:Mux4|muxlut:$00009|result_node~0 ; out0             ;
+; |task_2|lpm_mux:Mux4|muxlut:$00009|_~5           ; |task_2|lpm_mux:Mux4|muxlut:$00009|_~5           ; out0             ;
+; |task_2|lpm_mux:Mux4|muxlut:$00009|_~6           ; |task_2|lpm_mux:Mux4|muxlut:$00009|_~6           ; out0             ;
+; |task_2|lpm_mux:Mux4|muxlut:$00009|_~7           ; |task_2|lpm_mux:Mux4|muxlut:$00009|_~7           ; out0             ;
+; |task_2|lpm_mux:Mux3|muxlut:$00009|_~0           ; |task_2|lpm_mux:Mux3|muxlut:$00009|_~0           ; out0             ;
+; |task_2|lpm_mux:Mux3|muxlut:$00009|_~1           ; |task_2|lpm_mux:Mux3|muxlut:$00009|_~1           ; out0             ;
+; |task_2|lpm_mux:Mux3|muxlut:$00009|_~2           ; |task_2|lpm_mux:Mux3|muxlut:$00009|_~2           ; out0             ;
+; |task_2|lpm_mux:Mux3|muxlut:$00009|_~3           ; |task_2|lpm_mux:Mux3|muxlut:$00009|_~3           ; out0             ;
+; |task_2|lpm_mux:Mux3|muxlut:$00009|_~4           ; |task_2|lpm_mux:Mux3|muxlut:$00009|_~4           ; out0             ;
+; |task_2|lpm_mux:Mux3|muxlut:$00009|result_node~0 ; |task_2|lpm_mux:Mux3|muxlut:$00009|result_node~0 ; out0             ;
+; |task_2|lpm_mux:Mux3|muxlut:$00009|_~5           ; |task_2|lpm_mux:Mux3|muxlut:$00009|_~5           ; out0             ;
+; |task_2|lpm_mux:Mux3|muxlut:$00009|_~6           ; |task_2|lpm_mux:Mux3|muxlut:$00009|_~6           ; out0             ;
+; |task_2|lpm_mux:Mux3|muxlut:$00009|_~7           ; |task_2|lpm_mux:Mux3|muxlut:$00009|_~7           ; out0             ;
+; |task_2|lpm_mux:Mux3|muxlut:$00009|_~8           ; |task_2|lpm_mux:Mux3|muxlut:$00009|_~8           ; out0             ;
+; |task_2|lpm_mux:Mux3|muxlut:$00009|result_node~1 ; |task_2|lpm_mux:Mux3|muxlut:$00009|result_node~1 ; out0             ;
+; |task_2|lpm_mux:Mux3|muxlut:$00009|result_node   ; |task_2|lpm_mux:Mux3|muxlut:$00009|result_node   ; out0             ;
+; |task_2|lpm_mux:Mux2|muxlut:$00009|_~0           ; |task_2|lpm_mux:Mux2|muxlut:$00009|_~0           ; out0             ;
+; |task_2|lpm_mux:Mux2|muxlut:$00009|_~1           ; |task_2|lpm_mux:Mux2|muxlut:$00009|_~1           ; out0             ;
+; |task_2|lpm_mux:Mux2|muxlut:$00009|_~2           ; |task_2|lpm_mux:Mux2|muxlut:$00009|_~2           ; out0             ;
+; |task_2|lpm_mux:Mux2|muxlut:$00009|_~3           ; |task_2|lpm_mux:Mux2|muxlut:$00009|_~3           ; out0             ;
+; |task_2|lpm_mux:Mux2|muxlut:$00009|result_node~0 ; |task_2|lpm_mux:Mux2|muxlut:$00009|result_node~0 ; out0             ;
+; |task_2|lpm_mux:Mux2|muxlut:$00009|_~5           ; |task_2|lpm_mux:Mux2|muxlut:$00009|_~5           ; out0             ;
+; |task_2|lpm_mux:Mux2|muxlut:$00009|_~6           ; |task_2|lpm_mux:Mux2|muxlut:$00009|_~6           ; out0             ;
+; |task_2|lpm_mux:Mux2|muxlut:$00009|_~7           ; |task_2|lpm_mux:Mux2|muxlut:$00009|_~7           ; out0             ;
+; |task_2|lpm_mux:Mux1|muxlut:$00009|_~0           ; |task_2|lpm_mux:Mux1|muxlut:$00009|_~0           ; out0             ;
+; |task_2|lpm_mux:Mux1|muxlut:$00009|_~1           ; |task_2|lpm_mux:Mux1|muxlut:$00009|_~1           ; out0             ;
+; |task_2|lpm_mux:Mux1|muxlut:$00009|_~2           ; |task_2|lpm_mux:Mux1|muxlut:$00009|_~2           ; out0             ;
+; |task_2|lpm_mux:Mux1|muxlut:$00009|_~3           ; |task_2|lpm_mux:Mux1|muxlut:$00009|_~3           ; out0             ;
+; |task_2|lpm_mux:Mux1|muxlut:$00009|_~4           ; |task_2|lpm_mux:Mux1|muxlut:$00009|_~4           ; out0             ;
+; |task_2|lpm_mux:Mux1|muxlut:$00009|result_node~0 ; |task_2|lpm_mux:Mux1|muxlut:$00009|result_node~0 ; out0             ;
+; |task_2|lpm_mux:Mux1|muxlut:$00009|_~5           ; |task_2|lpm_mux:Mux1|muxlut:$00009|_~5           ; out0             ;
+; |task_2|lpm_mux:Mux1|muxlut:$00009|_~6           ; |task_2|lpm_mux:Mux1|muxlut:$00009|_~6           ; out0             ;
+; |task_2|lpm_mux:Mux1|muxlut:$00009|_~7           ; |task_2|lpm_mux:Mux1|muxlut:$00009|_~7           ; out0             ;
+; |task_2|lpm_mux:Mux0|muxlut:$00009|_~0           ; |task_2|lpm_mux:Mux0|muxlut:$00009|_~0           ; out0             ;
+; |task_2|lpm_mux:Mux0|muxlut:$00009|_~1           ; |task_2|lpm_mux:Mux0|muxlut:$00009|_~1           ; out0             ;
+; |task_2|lpm_mux:Mux0|muxlut:$00009|_~2           ; |task_2|lpm_mux:Mux0|muxlut:$00009|_~2           ; out0             ;
+; |task_2|lpm_mux:Mux0|muxlut:$00009|_~3           ; |task_2|lpm_mux:Mux0|muxlut:$00009|_~3           ; out0             ;
+; |task_2|lpm_mux:Mux0|muxlut:$00009|_~4           ; |task_2|lpm_mux:Mux0|muxlut:$00009|_~4           ; out0             ;
+; |task_2|lpm_mux:Mux0|muxlut:$00009|result_node~0 ; |task_2|lpm_mux:Mux0|muxlut:$00009|result_node~0 ; out0             ;
+; |task_2|lpm_mux:Mux0|muxlut:$00009|_~5           ; |task_2|lpm_mux:Mux0|muxlut:$00009|_~5           ; out0             ;
+; |task_2|lpm_mux:Mux0|muxlut:$00009|_~6           ; |task_2|lpm_mux:Mux0|muxlut:$00009|_~6           ; out0             ;
+; |task_2|lpm_mux:Mux0|muxlut:$00009|_~7           ; |task_2|lpm_mux:Mux0|muxlut:$00009|_~7           ; out0             ;
+; |task_2|lpm_mux:Mux0|muxlut:$00009|_~8           ; |task_2|lpm_mux:Mux0|muxlut:$00009|_~8           ; out0             ;
+; |task_2|lpm_mux:Mux0|muxlut:$00009|result_node~1 ; |task_2|lpm_mux:Mux0|muxlut:$00009|result_node~1 ; out0             ;
+; |task_2|lpm_mux:Mux0|muxlut:$00009|result_node   ; |task_2|lpm_mux:Mux0|muxlut:$00009|result_node   ; out0             ;
++--------------------------------------------------+--------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
+    Info: Processing started: Tue Nov 01 16:44:53 2022
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off task_2 -c task_2
+Info: Using vector source file "C:/Users/19301261/Desktop/460/CSE460-Lab/Lab 4/Task 2/task_2.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      32.56 %
+Info: Number of transitions in simulation is 302
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 153 megabytes
+    Info: Processing ended: Tue Nov 01 16:44:53 2022
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
