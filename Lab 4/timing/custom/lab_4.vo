@@ -1,0 +1,370 @@
+// Copyright (C) 1991-2008 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II"
+// VERSION "Version 8.1 Build 163 10/28/2008 SJ Web Edition"
+
+// DATE "11/01/2022 16:11:06"
+
+// 
+// Device: Altera EPF10K30ETC144-1 Package TQFP144
+// 
+
+// 
+// This Verilog file should be used for Custom Verilog HDL only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module lab_4 (
+	clk,
+	reset,
+	cash_in,
+	cash_return,
+	purchase,
+	next_state,
+	current_state);
+input 	clk;
+input 	reset;
+input 	[0:1] cash_in;
+output 	[1:0] cash_return;
+output 	purchase;
+output 	next_state;
+output 	current_state;
+
+wire gnd = 1'b0;
+wire vcc = 1'b1;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("lab_4_v.sdo");
+// synopsys translate_on
+
+wire \cash_in[0]~dataout ;
+wire \cash_in[1]~dataout ;
+wire \reset~dataout ;
+wire \clk~dataout ;
+wire \next_state~reg0_regout ;
+wire \cash_return[0]~reg0_regout ;
+wire \cash_return[1]~reg0_regout ;
+wire \purchase~reg0_regout ;
+wire \current_state~reg0_regout ;
+
+
+// atom is at PIN_124
+flex10ke_io \cash_in[0]~I (
+	.datain(gnd),
+	.clk(gnd),
+	.ena(vcc),
+	.aclr(gnd),
+	.oe(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.dataout(\cash_in[0]~dataout ),
+	.padio(cash_in[0]));
+// synopsys translate_off
+defparam \cash_in[0]~I .feedback_mode = "from_pin";
+defparam \cash_in[0]~I .operation_mode = "input";
+defparam \cash_in[0]~I .reg_source_mode = "none";
+// synopsys translate_on
+
+// atom is at PIN_54
+flex10ke_io \cash_in[1]~I (
+	.datain(gnd),
+	.clk(gnd),
+	.ena(vcc),
+	.aclr(gnd),
+	.oe(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.dataout(\cash_in[1]~dataout ),
+	.padio(cash_in[1]));
+// synopsys translate_off
+defparam \cash_in[1]~I .feedback_mode = "from_pin";
+defparam \cash_in[1]~I .operation_mode = "input";
+defparam \cash_in[1]~I .reg_source_mode = "none";
+// synopsys translate_on
+
+// atom is at PIN_126
+flex10ke_io \reset~I (
+	.datain(gnd),
+	.clk(gnd),
+	.ena(vcc),
+	.aclr(gnd),
+	.oe(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.dataout(\reset~dataout ),
+	.padio(reset));
+// synopsys translate_off
+defparam \reset~I .feedback_mode = "from_pin";
+defparam \reset~I .operation_mode = "input";
+defparam \reset~I .reg_source_mode = "none";
+// synopsys translate_on
+
+// atom is at PIN_55
+flex10ke_io \clk~I (
+	.datain(gnd),
+	.clk(gnd),
+	.ena(vcc),
+	.aclr(gnd),
+	.oe(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.dataout(\clk~dataout ),
+	.padio(clk));
+// synopsys translate_off
+defparam \clk~I .feedback_mode = "from_pin";
+defparam \clk~I .operation_mode = "input";
+defparam \clk~I .reg_source_mode = "none";
+// synopsys translate_on
+
+// atom is at LC1_D3
+flex10ke_lcell \next_state~reg0 (
+// Equation(s):
+// \next_state~reg0_regout  = DFFEA(!\next_state~reg0_regout  & !\cash_in[0]~dataout  & \cash_in[1]~dataout , GLOBAL(\clk~dataout ), !GLOBAL(\reset~dataout ), , , , )
+
+	.dataa(vcc),
+	.datab(\next_state~reg0_regout ),
+	.datac(\cash_in[0]~dataout ),
+	.datad(\cash_in[1]~dataout ),
+	.aclr(\reset~dataout ),
+	.aload(gnd),
+	.clk(\clk~dataout ),
+	.cin(gnd),
+	.cascin(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\next_state~reg0_regout ),
+	.cout(),
+	.cascout());
+// synopsys translate_off
+defparam \next_state~reg0 .clock_enable_mode = "false";
+defparam \next_state~reg0 .lut_mask = "0300";
+defparam \next_state~reg0 .operation_mode = "normal";
+defparam \next_state~reg0 .output_mode = "reg_only";
+defparam \next_state~reg0 .packed_mode = "false";
+// synopsys translate_on
+
+// atom is at LC3_D3
+flex10ke_lcell \cash_return[0]~reg0 (
+// Equation(s):
+// \cash_return[0]~reg0_regout  = DFFEA(\next_state~reg0_regout  & (\cash_in[0]~dataout  # !\cash_in[1]~dataout ), GLOBAL(\clk~dataout ), !GLOBAL(\reset~dataout ), , , , )
+
+	.dataa(vcc),
+	.datab(\next_state~reg0_regout ),
+	.datac(\cash_in[0]~dataout ),
+	.datad(\cash_in[1]~dataout ),
+	.aclr(\reset~dataout ),
+	.aload(gnd),
+	.clk(\clk~dataout ),
+	.cin(gnd),
+	.cascin(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\cash_return[0]~reg0_regout ),
+	.cout(),
+	.cascout());
+// synopsys translate_off
+defparam \cash_return[0]~reg0 .clock_enable_mode = "false";
+defparam \cash_return[0]~reg0 .lut_mask = "c0cc";
+defparam \cash_return[0]~reg0 .operation_mode = "normal";
+defparam \cash_return[0]~reg0 .output_mode = "reg_only";
+defparam \cash_return[0]~reg0 .packed_mode = "false";
+// synopsys translate_on
+
+// atom is at LC6_D18
+flex10ke_lcell \cash_return[1]~reg0 (
+// Equation(s):
+// \cash_return[1]~reg0_regout  = DFFEA(\cash_in[1]~dataout  & \cash_in[0]~dataout , GLOBAL(\clk~dataout ), !GLOBAL(\reset~dataout ), , , , )
+
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(\cash_in[1]~dataout ),
+	.datad(\cash_in[0]~dataout ),
+	.aclr(\reset~dataout ),
+	.aload(gnd),
+	.clk(\clk~dataout ),
+	.cin(gnd),
+	.cascin(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\cash_return[1]~reg0_regout ),
+	.cout(),
+	.cascout());
+// synopsys translate_off
+defparam \cash_return[1]~reg0 .clock_enable_mode = "false";
+defparam \cash_return[1]~reg0 .lut_mask = "f000";
+defparam \cash_return[1]~reg0 .operation_mode = "normal";
+defparam \cash_return[1]~reg0 .output_mode = "reg_only";
+defparam \cash_return[1]~reg0 .packed_mode = "false";
+// synopsys translate_on
+
+// atom is at LC5_D3
+flex10ke_lcell \purchase~reg0 (
+// Equation(s):
+// \purchase~reg0_regout  = DFFEA(\cash_in[0]~dataout  # \next_state~reg0_regout  & \cash_in[1]~dataout , GLOBAL(\clk~dataout ), !GLOBAL(\reset~dataout ), , , , )
+
+	.dataa(vcc),
+	.datab(\cash_in[0]~dataout ),
+	.datac(\next_state~reg0_regout ),
+	.datad(\cash_in[1]~dataout ),
+	.aclr(\reset~dataout ),
+	.aload(gnd),
+	.clk(\clk~dataout ),
+	.cin(gnd),
+	.cascin(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\purchase~reg0_regout ),
+	.cout(),
+	.cascout());
+// synopsys translate_off
+defparam \purchase~reg0 .clock_enable_mode = "false";
+defparam \purchase~reg0 .lut_mask = "fccc";
+defparam \purchase~reg0 .operation_mode = "normal";
+defparam \purchase~reg0 .output_mode = "reg_only";
+defparam \purchase~reg0 .packed_mode = "false";
+// synopsys translate_on
+
+// atom is at LC6_D3
+flex10ke_lcell \current_state~reg0 (
+// Equation(s):
+// \current_state~reg0_regout  = DFFEA(\next_state~reg0_regout , GLOBAL(\clk~dataout ), !GLOBAL(\reset~dataout ), , , , )
+
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(vcc),
+	.datad(\next_state~reg0_regout ),
+	.aclr(\reset~dataout ),
+	.aload(gnd),
+	.clk(\clk~dataout ),
+	.cin(gnd),
+	.cascin(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\current_state~reg0_regout ),
+	.cout(),
+	.cascout());
+// synopsys translate_off
+defparam \current_state~reg0 .clock_enable_mode = "false";
+defparam \current_state~reg0 .lut_mask = "ff00";
+defparam \current_state~reg0 .operation_mode = "normal";
+defparam \current_state~reg0 .output_mode = "reg_only";
+defparam \current_state~reg0 .packed_mode = "false";
+// synopsys translate_on
+
+// atom is at PIN_91
+flex10ke_io \cash_return[0]~I (
+	.datain(\cash_return[0]~reg0_regout ),
+	.clk(gnd),
+	.ena(vcc),
+	.aclr(gnd),
+	.oe(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.dataout(),
+	.padio(cash_return[0]));
+// synopsys translate_off
+defparam \cash_return[0]~I .feedback_mode = "none";
+defparam \cash_return[0]~I .operation_mode = "output";
+defparam \cash_return[0]~I .reg_source_mode = "none";
+// synopsys translate_on
+
+// atom is at PIN_23
+flex10ke_io \cash_return[1]~I (
+	.datain(\cash_return[1]~reg0_regout ),
+	.clk(gnd),
+	.ena(vcc),
+	.aclr(gnd),
+	.oe(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.dataout(),
+	.padio(cash_return[1]));
+// synopsys translate_off
+defparam \cash_return[1]~I .feedback_mode = "none";
+defparam \cash_return[1]~I .operation_mode = "output";
+defparam \cash_return[1]~I .reg_source_mode = "none";
+// synopsys translate_on
+
+// atom is at PIN_90
+flex10ke_io \purchase~I (
+	.datain(\purchase~reg0_regout ),
+	.clk(gnd),
+	.ena(vcc),
+	.aclr(gnd),
+	.oe(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.dataout(),
+	.padio(purchase));
+// synopsys translate_off
+defparam \purchase~I .feedback_mode = "none";
+defparam \purchase~I .operation_mode = "output";
+defparam \purchase~I .reg_source_mode = "none";
+// synopsys translate_on
+
+// atom is at PIN_92
+flex10ke_io \next_state~I (
+	.datain(\next_state~reg0_regout ),
+	.clk(gnd),
+	.ena(vcc),
+	.aclr(gnd),
+	.oe(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.dataout(),
+	.padio(next_state));
+// synopsys translate_off
+defparam \next_state~I .feedback_mode = "none";
+defparam \next_state~I .operation_mode = "output";
+defparam \next_state~I .reg_source_mode = "none";
+// synopsys translate_on
+
+// atom is at PIN_89
+flex10ke_io \current_state~I (
+	.datain(\current_state~reg0_regout ),
+	.clk(gnd),
+	.ena(vcc),
+	.aclr(gnd),
+	.oe(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.dataout(),
+	.padio(current_state));
+// synopsys translate_off
+defparam \current_state~I .feedback_mode = "none";
+defparam \current_state~I .operation_mode = "output";
+defparam \current_state~I .reg_source_mode = "none";
+// synopsys translate_on
+
+endmodule
