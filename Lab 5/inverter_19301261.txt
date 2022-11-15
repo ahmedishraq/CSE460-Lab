@@ -1,0 +1,17 @@
+// DSCH 2.7a
+// 11/15/2022 2:57:50 PM
+// D:\UB8-CSE-Soft\dsch2\inverter_19301261.sch
+
+module inverter_19301261( input,output);
+ input input;
+ output output;
+ pmos #(17) pmos(output,vdd,input); // 2.0u 0.12u
+ nmos #(17) nmos(output,vss,input); // 1.0u 0.12u
+endmodule
+
+// Simulation parameters in Verilog Format
+always
+#1000 input=~input;
+
+// Simulation parameters
+// input CLK 10 10
