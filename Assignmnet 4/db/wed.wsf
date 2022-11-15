@@ -24,9 +24,9 @@ VECTOR("F:/Study/VLSI/CSE460-Lab/Assignmnet 4/db/assignment_4.sim.cvwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 39963;
+		ZEND = 159852;
 		NUMERATOR = 1394;
-		DENOMINATOR = 39963;
+		DENOMINATOR = 159852;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
