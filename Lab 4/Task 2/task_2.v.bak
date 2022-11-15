@@ -1,4 +1,4 @@
-module vlsi_lab04(clk,reset,cash_in,cash_return,purchase,next_state,current_state);
+module task_2(clk,reset,cash_in,cash_return,purchase,next_state,current_state);
 input clk,reset;
 input [0:1] cash_in;
 
