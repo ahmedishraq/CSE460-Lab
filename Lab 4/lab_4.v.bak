@@ -77,19 +77,16 @@ module lab_4(clk,reset,cash_in,cash_return,purchase,next_state,current_state);
 						begin
 							next_state = S0;
 							purchase =1 ;
-cash_return =ret_5tk;
-end
-
-else if(cash_in == in_20tk)
-begin
-next_state = S0;
-purchase = 1;
-cash_return = ret_15tk;
-
-end
-end
-endcase
-end
-end
-
+							cash_return =ret_5tk;
+						end
+						else if(cash_in == in_20tk)
+						begin
+							next_state = S0;
+							purchase = 1;
+							cash_return = ret_15tk;
+						end
+					end
+			endcase
+		end
+	end
 endmodule 

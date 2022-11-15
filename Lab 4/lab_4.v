@@ -65,7 +65,7 @@ module lab_4(clk,reset,cash_in,cash_return,purchase,next_state,current_state);
 						begin
 							next_state = S0;
 							purchase = 0;
-							cash_return = 5;
+							cash_return = ret_5tk;
 						end
 						else if (cash_in==in_5tk)
 						begin
