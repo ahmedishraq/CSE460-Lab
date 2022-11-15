@@ -1,0 +1,73 @@
+// DSCH 2.7a
+// 11/15/2022 4:13:06 PM
+// D:\UB8-CSE-Soft\dsch2\Counter_19301261.sch
+
+module Counter_19301261( clr,clk,digit11,digit12,digit13,digit14);
+ input clr,clk;
+ output digit11,digit12,digit13,digit14;
+ wire w5,w6,w7,w8,w9,w10,w11,w12;
+ wire w13,w14,w15,w16,w17,w18,w19,w20;
+ wire w21,w22,w23;
+ not #(87) inverter_19301261_Po1(w5,digit14);
+ and #(68) and2_Po2(w7,w3,w6);
+ not #(35) inverter_19301261_Po3(w6,clr);
+ nand #(74) nand2_19301261_DL1_Po4(w9,w8,w5);
+ nand #(74) nand2_19301261_DL2_Po5(w10,w5,w7);
+ nand #(138) nand2_19301261_DL3_Po6(w12,w11,w10);
+ nand #(75) nand2_19301261_DL4_Po7(w11,w9,w12);
+ not #(61) inverter_19301261_DL5_Po8(w8,w7);
+ pmos #(73) pmos_na1_DL6_Po9(w9,vdd,w8); //  
+ pmos #(73) pmos_na2_DL7_Po10(w9,vdd,w5); //  
+ nmos #(73) nmos_na3_DL8_Po11(w9,w13,w5); //  
+ nmos #(14) nmos_na4_DL9_Po12(w13,digit12,w8); //  
+ pmos #(73) pmos_na5_DL10_Po13(w10,vdd,w5); //  
+ pmos #(73) pmos_na6_DL11_Po14(w10,vdd,w7); //  
+ nmos #(73) nmos_na7_DL12_Po15(w10,w14,w7); //  
+ nmos #(14) nmos_na8_DL13_Po16(w14,digit12,w5); //  
+ pmos #(138) pmos_na9_DL14_Po17(w12,vdd,w11); //  
+ pmos #(138) pmos_na10_DL15_Po18(w12,vdd,w10); //  
+ nmos #(138) nmos_na11_DL16_Po19(w12,w15,w10); //  
+ nmos #(14) nmos_na12_DL17_Po20(w15,digit12,w11); //  
+ pmos #(75) pmos_na13_DL18_Po21(w11,vdd,w9); //  
+ pmos #(75) pmos_na14_DL19_Po22(w11,vdd,w12); //  
+ nmos #(75) nmos_na15_DL20_Po23(w11,w16,w12); //  
+ nmos #(14) nmos_na16_DL21_Po24(w16,digit12,w9); //  
+ pmos #(60) pmos_in17_DL22_Po25(w8,vdd,w7); //  
+ nmos #(60) nmos_in18_DL23_Po26(w8,digit12,w7); //  
+ nand #(74) nand2_19301261_DL24_Po27(w18,w17,digit14);
+ nand #(74) nand2_19301261_DL25_Po28(w19,digit14,w12);
+ nand #(86) nand2_19301261_DL26_Po29(digit13,w3,w19);
+ nand #(86) nand2_19301261_DL27_Po30(w3,w18,digit13);
+ not #(61) inverter_19301261_DL28_Po31(w17,w12);
+ pmos #(73) pmos_na1_DL29_Po32(w18,vdd,w17); //  
+ pmos #(73) pmos_na2_DL30_Po33(w18,vdd,digit14); //  
+ nmos #(73) nmos_na3_DL31_Po34(w18,w20,digit14); //  
+ nmos #(14) nmos_na4_DL32_Po35(w20,digit12,w17); //  
+ pmos #(73) pmos_na5_DL33_Po36(w19,vdd,digit14); //  
+ pmos #(73) pmos_na6_DL34_Po37(w19,vdd,w12); //  
+ nmos #(73) nmos_na7_DL35_Po38(w19,w21,w12); //  
+ nmos #(14) nmos_na8_DL36_Po39(w21,digit12,digit14); //  
+ pmos #(86) pmos_na9_DL37_Po40(digit13,vdd,w3); //  
+ pmos #(86) pmos_na10_DL38_Po41(digit13,vdd,w19); //  
+ nmos #(86) nmos_na11_DL39_Po42(digit13,w22,w19); //  
+ nmos #(14) nmos_na12_DL40_Po43(w22,digit12,w3); //  
+ pmos #(86) pmos_na13_DL41_Po44(w3,vdd,w18); //  
+ pmos #(86) pmos_na14_DL42_Po45(w3,vdd,digit13); //  
+ nmos #(86) nmos_na15_DL43_Po46(w3,w23,digit13); //  
+ nmos #(14) nmos_na16_DL44_Po47(w23,digit12,w18); //  
+ pmos #(60) pmos_in17_DL45_Po48(w17,vdd,w12); //  
+ nmos #(60) nmos_in18_DL46_Po49(w17,digit12,w12); //  
+ pmos #(85) pmos_in47_Po50(w5,vdd,digit14); //  
+ nmos #(85) nmos_in48_Po51(w5,digit12,digit14); //  
+ pmos #(33) pmos_in49_Po52(w6,vdd,clr); //  
+ nmos #(33) nmos_in50_Po53(w6,digit12,clr); //  
+endmodule
+
+// Simulation parameters in Verilog Format
+always
+#1000 clr=~clr;
+#2000 clk=~clk;
+
+// Simulation parameters
+// clr CLK 10 10
+// clk CLK 20 20
