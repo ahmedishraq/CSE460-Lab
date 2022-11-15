@@ -1,0 +1,21 @@
+// DSCH 2.7a
+// 11/15/2022 3:07:55 PM
+// D:\UB8-CSE-Soft\dsch2\nand2_19301261.sch
+
+module nand2_19301261( A,B,output);
+ input A,B;
+ output output;
+ pmos #(24) pmos(output,vdd,A); // 2.0u 0.12u
+ pmos #(24) pmos(output,vdd,B); // 2.0u 0.12u
+ nmos #(24) nmos(output,w4,B); // 1.0u 0.12u
+ nmos #(10) nmos(w4,vss,A); // 1.0u 0.12u
+endmodule
+
+// Simulation parameters in Verilog Format
+always
+#1000 A=~A;
+#2000 B=~B;
+
+// Simulation parameters
+// A CLK 10 10
+// B CLK 20 20
