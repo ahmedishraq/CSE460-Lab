@@ -1,0 +1,37 @@
+// DSCH 2.7a
+// 12/5/2022 9:20:56 PM
+// F:\Study\VLSI\CSE460-Lab\Practice\Dsch2\Export dsch2\Export dsch2\Practice\DLatch.sch
+
+module DLatch( CLK,D,Q,nQ);
+ input CLK,D;
+ output Q,nQ;
+ wire w8,w9,w10,w11;
+ not #(34) inverter(w5,D);
+ nmos #(12) nmos_NA1(w8,vss,nQ); //  
+ pmos #(47) pmos_NA2(Q,vdd,nQ); //  
+ pmos #(47) pmos_NA3(Q,vdd,w2); //  
+ nmos #(47) nmos_NA4(Q,w8,w2); //  
+ nmos #(12) nmos_NA5(w9,vss,w5); //  
+ pmos #(40) pmos_NA6(w6,vdd,w5); //  
+ pmos #(40) pmos_NA7(w6,vdd,CLK); //  
+ nmos #(40) nmos_NA8(w6,w9,CLK); //  
+ nmos #(12) nmos_NA9(w10,vss,CLK); //  
+ pmos #(40) pmos_NA10(w2,vdd,CLK); //  
+ pmos #(40) pmos_NA11(w2,vdd,D); //  
+ nmos #(40) nmos_NA12(w2,w10,D); //  
+ nmos #(12) nmos_NA13(w11,vss,w6); //  
+ pmos #(47) pmos_NA14(nQ,vdd,w6); //  
+ pmos #(47) pmos_NA15(nQ,vdd,Q); //  
+ nmos #(47) nmos_NA16(nQ,w11,Q); //  
+ nmos #(30) nmos_in17(w5,vss,D); //  
+ pmos #(30) pmos_in18(w5,vdd,D); //  
+endmodule
+
+// Simulation parameters in Verilog Format
+always
+#1000 CLK=~CLK;
+#2000 D=~D;
+
+// Simulation parameters
+// CLK CLK 10 10
+// D CLK 20 20

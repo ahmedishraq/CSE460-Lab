@@ -1,0 +1,21 @@
+// DSCH 2.7a
+// 12/5/2022 9:14:56 PM
+// F:\Study\VLSI\CSE460-Lab\Practice\Dsch2\Export dsch2\Export dsch2\Practice\NAND2.sch
+
+module NAND2( B,A,output);
+ input B,A;
+ output output;
+ nmos #(10) nmos(w2,vss,A); // 1.0u 0.12u
+ pmos #(24) pmos(output,vdd,A); // 2.0u 0.12u
+ pmos #(24) pmos(output,vdd,B); // 2.0u 0.12u
+ nmos #(24) nmos(output,w2,B); // 1.0u 0.12u
+endmodule
+
+// Simulation parameters in Verilog Format
+always
+#1000 B=~B;
+#2000 A=~A;
+
+// Simulation parameters
+// B CLK 10 10
+// A CLK 20 20

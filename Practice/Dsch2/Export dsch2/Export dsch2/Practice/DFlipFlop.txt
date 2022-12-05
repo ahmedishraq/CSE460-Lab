@@ -1,0 +1,66 @@
+// DSCH 2.7a
+// 12/5/2022 9:26:13 PM
+// F:\Study\VLSI\CSE460-Lab\Practice\Dsch2\Export dsch2\Export dsch2\Practice\DFlipFlop.sch
+
+module DFlipFlop( CLR,D,CLK,nQ,Q);
+ input CLR,D,CLK;
+ output nQ,Q;
+ wire w11,w12,w13,w14,w15,w16,w17,w18;
+ wire w19,w20,w21,w22,w23,w24;
+ and #(44) and2(w2,D,w9);
+ not #(27) inverter(w9,CLR);
+ not #(48) inverter(w1,CLK);
+ not #(45) inverter_DL1(w11,w2);
+ nmos #(13) nmos_NA1_DL2(w12,vss,w4); //  
+ pmos #(87) pmos_NA2_DL3(w3,vdd,w4); //  
+ pmos #(87) pmos_NA3_DL4(w3,vdd,w13); //  
+ nmos #(87) nmos_NA4_DL5(w3,w12,w13); //  
+ nmos #(13) nmos_NA5_DL6(w14,vss,w11); //  
+ pmos #(48) pmos_NA6_DL7(w15,vdd,w11); //  
+ pmos #(48) pmos_NA7_DL8(w15,vdd,w1); //  
+ nmos #(48) nmos_NA8_DL9(w15,w14,w1); //  
+ nmos #(13) nmos_NA9_DL10(w16,vss,w1); //  
+ pmos #(48) pmos_NA10_DL11(w13,vdd,w1); //  
+ pmos #(48) pmos_NA11_DL12(w13,vdd,w2); //  
+ nmos #(48) nmos_NA12_DL13(w13,w16,w2); //  
+ nmos #(13) nmos_NA13_DL14(w17,vss,w15); //  
+ pmos #(52) pmos_NA14_DL15(w4,vdd,w15); //  
+ pmos #(52) pmos_NA15_DL16(w4,vdd,w3); //  
+ nmos #(52) nmos_NA16_DL17(w4,w17,w3); //  
+ nmos #(43) nmos_in17_DL18(w11,vss,w2); //  
+ pmos #(43) pmos_in18_DL19(w11,vdd,w2); //  
+ not #(45) inverter_DL20(w18,w3);
+ nmos #(13) nmos_NA1_DL21(w19,vss,nQ); //  
+ pmos #(59) pmos_NA2_DL22(Q,vdd,nQ); //  
+ pmos #(59) pmos_NA3_DL23(Q,vdd,w20); //  
+ nmos #(59) nmos_NA4_DL24(Q,w19,w20); //  
+ nmos #(13) nmos_NA5_DL25(w21,vss,w18); //  
+ pmos #(48) pmos_NA6_DL26(w22,vdd,w18); //  
+ pmos #(48) pmos_NA7_DL27(w22,vdd,CLK); //  
+ nmos #(48) nmos_NA8_DL28(w22,w21,CLK); //  
+ nmos #(13) nmos_NA9_DL29(w23,vss,CLK); //  
+ pmos #(48) pmos_NA10_DL30(w20,vdd,CLK); //  
+ pmos #(48) pmos_NA11_DL31(w20,vdd,w3); //  
+ nmos #(48) nmos_NA12_DL32(w20,w23,w3); //  
+ nmos #(13) nmos_NA13_DL33(w24,vss,w22); //  
+ pmos #(59) pmos_NA14_DL34(nQ,vdd,w22); //  
+ pmos #(59) pmos_NA15_DL35(nQ,vdd,Q); //  
+ nmos #(59) nmos_NA16_DL36(nQ,w24,Q); //  
+ nmos #(43) nmos_in17_DL37(w18,vss,w3); //  
+ pmos #(43) pmos_in18_DL38(w18,vdd,w3); //  
+ nmos #(23) nmos_in39(w9,vss,CLR); //  
+ pmos #(23) pmos_in40(w9,vdd,CLR); //  
+ nmos #(44) nmos_in41(w1,vss,CLK); //  
+ pmos #(44) pmos_in42(w1,vdd,CLK); //  
+endmodule
+
+// Simulation parameters in Verilog Format
+always
+#1000 CLR=~CLR;
+#2000 D=~D;
+#4000 CLK=~CLK;
+
+// Simulation parameters
+// CLR CLK 10 10
+// D CLK 20 20
+// CLK CLK 40 40
