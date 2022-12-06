@@ -1,0 +1,17 @@
+// DSCH 2.7a
+// 12/6/2022 12:41:00 AM
+// C:\Users\19301261\Downloads\Export dsch2\Export dsch2\inv_19301261.sch
+
+module inv_19301261( A,output);
+ input A;
+ output output;
+ pmos #(17) pmos(output,vdd,A); // 2.0u 0.12u
+ nmos #(17) nmos(output,vss,A); // 1.0u 0.12u
+endmodule
+
+// Simulation parameters in Verilog Format
+always
+#1000 A=~A;
+
+// Simulation parameters
+// A CLK 10 10
